@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <math.h>
+struct student{
+ int p;
+ int s;
+}stud[100];
+int main()
+{
+ int i,t;
+ scanf("%d",&t);
+ for(i=0;i<t;i++){
+ scanf("%d %d",&stud[i].p,&stud[i].s);
+ }
+ for(i=0;i<t;i++){
+ char s[100]="union wrap w;";
+ if(s[0]=='u'){
+ float l,v,h;
+ l=(stud[i].p-(sqrt((stud[i].p*stud[i].p)-4*6*stud[i].s)))/12;
+ h=stud[i].p/4-2*l;
+ v=l*l*h;
+ printf("%.2f\n",v);}
+ }
+return 0;
+}
